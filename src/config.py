@@ -1,7 +1,3 @@
-# src/config.py
-
-# --- Configurações Gerais ---
-# URL da OLX que você está usando (conforme seu log)
 BASE_URL_OLX = "https://www.olx.com.br/brasil?q=imoveis"
 
 # Número máximo de páginas de resultados a serem percorridas.

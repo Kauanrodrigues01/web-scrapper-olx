@@ -1,6 +1,5 @@
-# src/scraper.py
 import requests
-import cloudscraper # Importa cloudscraper
+import cloudscraper
 from bs4 import BeautifulSoup
 import time
 import logging

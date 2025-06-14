@@ -1,17 +1,13 @@
-# main.py
 import logging
 from src.scraper import run_scraper
 from src.data_exporter import save_data
-from src.config import BASE_URL_OLX # Importar para fácil acesso e verificação
+from src.config import BASE_URL_OLX
 
-# Configuração básica do logging (se não configurado no scraper, pode ser feito aqui também)
-# No entanto, é melhor centralizar no scraper.py ou em um módulo de logging dedicado.
-# Se scraper.py já configura, esta linha não é estritamente necessária, mas não prejudica.
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("scraper.log", mode='a'), # mode='a' para append
+        logging.FileHandler("scraper.log", mode='a'),
         logging.StreamHandler()
     ]
 )
